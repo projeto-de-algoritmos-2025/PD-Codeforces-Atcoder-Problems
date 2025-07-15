@@ -71,7 +71,9 @@ $memo$:
 
 Dessa forma, conseguimos respoder as queries em $O(1)$, pois, para saber quantos pares $s_i = s_{i+1}$ existem para qualquer substring de s que esteja entre duas posições $x,y$, em que $x < y$ basta fazer:
 
-$memo[y] - memo[x]$
+```
+memo[y] - memo[x]
+```
 
 [Link para o código](./ilya_and_queries.cpp)
 
@@ -92,7 +94,9 @@ Esse problema pode ser resolvido usando uma estratégia similar ao Weighted Inte
 
 Com essa informação, é possível usar uma estratégia de programação dinâmica e memorização, para saber se é melhor saltar da coluna $i$ atual, ou se é melhor usar o salto feito na coluna $i+1$. Resultando na seguinte relação de recorrência:
 
-$opt(i, h) = max\{opt(i+1, h), \quad opt(p(i), h - drop(i))\;\}$
+```
+  opt(i, h) = max { opt(i+1, h),  opt(p(i), h - drop(i)) } 
+```
 
 Em que $i$ é a coluna de ar atual, $h$ é a altura do salto, $p(i)$ é a coluna mais adiante em que é possível chegar e $drop(i)$ é a queda de $i$ para $p(i)$.
 
