@@ -10,4 +10,4 @@
 
 [Questões do Leonardo](Leonardo-PD/explicacao.md)
 
-[Vídeo da apresentação]()
+[Vídeo da apresentação](https://youtu.be/MMBFiD9onGU)
